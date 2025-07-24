@@ -16,7 +16,9 @@
 .animate-content {
   animation: spring 600ms ease-out forwards;
 }
-
+.more-btn:active {
+  scale: 0.97;
+}
 @keyframes spring {
   0% {
     scale: 0;

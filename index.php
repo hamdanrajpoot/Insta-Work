@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +9,23 @@
 <?php include './bootstrap.php' ?>
     <title>Instagram</title>
 </head>
+<?php
+if(!isset($_SESSION['ticket'])){
+  header("Location:http://localhost:3000/sign-up.php");
+}
+
+?>
 <body>
+
+
+  <!-- sidebar-fotter -->
+<?php include './sidebar-footer.php'?>
+
+
+
+   <!-- closed -->
 <!-- overlay -->
+ 
 <div style="height:100vh; width:100vw;background:rgba(0,0,0,0.7)" class="position-fixed overlay d-none justify-content-center align-items-center d-flex top-0 z-3">
     <i class="bi bi-x-lg close-overlay text-white position-fixed  " style="top:10px; right:10px; cursor:pointer;"></i>
 <div class="col-xl-7 col-lg-8 my-overlay-content col-md-10 col-11 mx-auto" style="height:70vh;">
@@ -35,7 +53,8 @@
     </div>
     <i class="bi bi-three-dots"></i>
   </div>
-  <!-- comments section -->
+  <!-- Imran Khan comment -->
+
    <div class="d-flex p-3 justify-content-between">
     <div class="d-flex justify-content-between align-items-center w-100">
             <div class="d-flex gap-1 align-items-center">
@@ -57,6 +76,38 @@
         </div>
         <div class="d-flex gap-2">
             <p class="m-0 text-xxsm">5d</p>
+            <p class="m-0 text-xxsm">10 Likes</p>
+            <p class="m-0 text-xxsm">Reply</p>
+        </div>
+      </div>
+
+    </div>
+<i class="bi bi-heart text-xsm"></i>
+    </div>
+   </div>
+   <!-- closed -->
+   <!--  Ali Muhammmad Khan Comment -->
+<div class="d-flex p-3 justify-content-between">
+    <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex gap-1 align-items-center">
+      <div
+        class="rounded-circle border border-warning d-flex justify-content-center align-items-center"
+        style="height: 30px; width: 30px; background: linear-gradient(45deg, orange, pink, red);"
+      >
+        <img
+          src="https://arynews.tv/wp-content/uploads/2019/10/Ali-Muhammad-Khan.jpg"
+          class="object-fit-cover rounded-circle"
+          style="width: 93%; height: 93%;"
+          alt=""
+        />
+      </div>
+      <div class="">
+        <div class=" d-flex gap-2">
+            <h6 class="m-0" style="font-size:0.7rem;">Ali Muhammad Khan💯</h6>
+      <p style="font-size:0.6rem;" class="text-secondary m-0">Alwyz with U Khan Sahab!</p>
+        </div>
+        <div class="d-flex gap-2">
+            <p class="m-0 text-xxsm">5d</p>
             <p class="m-0 text-xxsm">2 Likes</p>
             <p class="m-0 text-xxsm">Reply</p>
         </div>
@@ -66,6 +117,105 @@
 <i class="bi bi-heart text-xsm"></i>
     </div>
    </div>
+    <!-- closed -->
+     <!-- Sher Afzal Murawat comment -->
+<div class="d-flex p-3 justify-content-between">
+    <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex gap-1 align-items-center">
+      <div
+        class="rounded-circle border border-warning d-flex justify-content-center align-items-center"
+        style="height: 30px; width: 30px; background: linear-gradient(45deg, orange, pink, red);"
+      >
+        <img
+          src="https://arynews.tv/wp-content/uploads/2024/04/Sher-afzal-marwat.jpg"
+          class="object-fit-cover rounded-circle"
+          style="width: 93%; height: 93%;"
+          alt=""
+        />
+      </div>
+      <div class="">
+        <div class=" d-flex gap-2">
+            <h6 class="m-0" style="font-size:0.7rem;">Sher Afzal Murawat💥</h6>
+      <p style="font-size:0.6rem;" class="text-secondary m-0">Ek Khan Sab pr Bharii!</p>
+        </div>
+        <div class="d-flex gap-2">
+            <p class="m-0 text-xxsm">5d</p>
+            <p class="m-0 text-xxsm">2 Likes</p>
+            <p class="m-0 text-xxsm">Reply</p>
+        </div>
+      </div>
+
+    </div>
+<i class="bi bi-heart text-xsm"></i>
+    </div>
+   </div>
+
+      <!-- closed -->
+       <!--Murad Saeed Comment  -->
+       <div class="d-flex p-3 justify-content-between">
+    <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex gap-1 align-items-center">
+      <div
+        class="rounded-circle border border-warning d-flex justify-content-center align-items-center"
+        style="height: 30px; width: 30px; background: linear-gradient(45deg, orange, pink, red);"
+      >
+        <img
+          src="https://www.samaa.tv/images/image-for-web-2023-12-29t150418-625.jpg"
+          class="object-fit-cover rounded-circle"
+          style="width: 93%; height: 93%;"
+          alt=""
+        />
+      </div>
+      <div class="">
+        <div class=" d-flex gap-2">
+            <h6 class="m-0" style="font-size:0.7rem;">Murad Saeed💥</h6>
+      <p style="font-size:0.6rem;" class="text-secondary m-0">Raulay ky tayar hn khan sahab!</p>
+        </div>
+        <div class="d-flex gap-2">
+            <p class="m-0 text-xxsm">5d</p>
+            <p class="m-0 text-xxsm">2 Likes</p>
+            <p class="m-0 text-xxsm">Reply</p>
+        </div>
+      </div>
+
+    </div>
+<i class="bi bi-heart text-xsm"></i>
+    </div>
+   </div>
+       <!-- closed -->
+        <!-- Ali Amin Gandapur -->
+       
+           <div class="d-flex p-3 justify-content-between">
+    <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex gap-1 align-items-center">
+      <div
+        class="rounded-circle border border-warning d-flex justify-content-center align-items-center"
+        style="height: 30px; width: 30px; background: linear-gradient(45deg, orange, pink, red);"
+      >
+        <img
+          src="https://i.tribune.com.pk/media/images/gandapur1710944105-0/gandapur1710944105-0.jpg"
+          class="object-fit-cover rounded-circle"
+          style="width: 93%; height: 93%;"
+          alt=""
+        />
+      </div>
+      <div class="">
+        <div class=" d-flex gap-2">
+            <h6 class="m-0" style="font-size:0.7rem;">Ali Amin Gandapur⚔️</h6>
+      <p style="font-size:0.6rem;" class="text-secondary m-0">Hukm kryn Khan Sahab!</p>
+        </div>
+        <div class="d-flex gap-2">
+            <p class="m-0 text-xxsm">5d</p>
+            <p class="m-0 text-xxsm">2 Likes</p>
+            <p class="m-0 text-xxsm">Reply</p>
+        </div>
+      </div>
+
+    </div>
+<i class="bi bi-heart text-xsm"></i>
+    </div>
+   </div>
+         <!-- closed -->
         </div>
     </div>
 </div>

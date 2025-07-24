@@ -50,7 +50,7 @@
             Username
         </span>
         <span class="text-secondary text-sm m-0">
-            Lorem ipsum dolor sit amet consectetur...
+            Chief of Army: Asim Munir Ahmed...
         </span>
     </div>
   </div>
