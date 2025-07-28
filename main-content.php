@@ -12,7 +12,7 @@
  </div>
 
 
-<div class="card pb-3 col-xl-5 col-lg-6 col-md-8 border-0 shadow-lg my-4 rounded-md">
+<div class="card pb-3 col-xl-6 col-lg-7 col-md-9 border-0 shadow-lg my-4 rounded-md">
   <div class="d-flex p-2 justify-content-between align-items-center">
     <div class="d-flex gap-1 align-items-center">
       <div
@@ -44,7 +44,7 @@
   <div class="p-2 pt-0">
     <p style="font-size:0.8rem" class="m-0 fw-bold">254likes</p>
   </div>
-  <div class="p-2">
+  <div class="p-2 pt-0">
     <div class="d-flex gap-1">
         <span class="fw-bold text-sm">
             Username

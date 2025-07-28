@@ -20,8 +20,13 @@ if(!isset($_SESSION['ticket'])){
 
   <!-- sidebar-fotter -->
 <?php include './sidebar-footer.php'?>
-
-
+<?php include './post-modal.php'?>
+<?php 
+if(isset($_SESSION['welcome'])){
+include './welcome.php';
+}
+unset($_SESSION['welcome'])
+ ?>
 
    <!-- closed -->
 <!-- overlay -->
@@ -192,16 +197,15 @@ if(!isset($_SESSION['ticket'])){
         class="rounded-circle border border-warning d-flex justify-content-center align-items-center"
         style="height: 30px; width: 30px; background: linear-gradient(45deg, orange, pink, red);"
       >
-        <img
-          src="https://i.tribune.com.pk/media/images/gandapur1710944105-0/gandapur1710944105-0.jpg"
-          class="object-fit-cover rounded-circle"
-          style="width: 93%; height: 93%;"
-          alt=""
-        />
-      </div>
+<img src="https://i.tribune.com.pk/media/images/gandapur1710944105-0/gandapur1710944105-0.jpg"
+ class="object-fit-cover rounded-circle"
+ style="width: 93%; height: 93%;"
+ alt=""
+/>
+</div>
       <div class="">
         <div class=" d-flex gap-2">
-            <h6 class="m-0" style="font-size:0.7rem;">Ali Amin Gandapur⚔️</h6>
+            <h6 class="m-0" style="font-size:0.7rem;">Ali Amin Gandapur⚔</h6>
       <p style="font-size:0.6rem;" class="text-secondary m-0">Hukm kryn Khan Sahab!</p>
         </div>
         <div class="d-flex gap-2">
@@ -226,16 +230,48 @@ if(!isset($_SESSION['ticket'])){
 
      <div class="col-2">
         <?php include './sidebar.php'?>
-     </div>
-     <!-- main content -->
-      <div style="height:97vh;overflow-y:scroll;"  class="col-xl-8 col-md-10 p-5 d-flex flex-column align-items-center">
-<?php include './main-content.php'?>
-      </div>
-      <!-- user section -->
-       <div class="col-xl-2"></div>
-       <!-- message is fixed -->
-        
 </div>
-</div>
+<!-- main content -->
+ <div style="height:97vh;overflow-y:scroll"
+                class="col-xl-7 col-md-10 p-5 d-flex flex-column align-items-center">
+                <?php include './main-content.php' ?>
+            </div>
+            <!-- user section -->
+            <div class="col-xl-3 py-5">
+                <div class="d-flex">
+                    <div class="d-flex align-items-center gap-3">
+                        <img width="60px" height="60px" class="rounded-circle object-fit-cover"
+                            src="https://i.postimg.cc/mD7129yF/Screenshot-20240802-114112-Gallery.jpg"
+                            alt="">
+                        <div class="">
+                            <h6 class="m-0">
+
+                                <?php
+                                echo $_SESSION['ticket']
+                                ?>
+                            </h6>
+                            <p class="text-secondary m-0 text-sm">
+
+                                <?php
+                                echo $_SESSION['fullname']
+                                ?>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-between col-6 my-3">
+                    <h6 class="text-secondary text-sm">
+                        Suggested for you
+                    </h6>
+                    <h6 class="text-dark text-sm">
+                        See All
+                    </h6>
+                </div>
+            </div>
+            <!-- message is fixed -->
+        </div>
+    </div>
 </body>
 </html>

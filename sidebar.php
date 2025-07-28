@@ -67,7 +67,7 @@
             </div>
             <div class="d-flex gap-3 align-items-center">
                 <i class="bi bi-plus-square"></i>
-                <h6 class="m-0 d-none d-lg-block">Create</h6>
+                <h6 class="m-0 d-none d-lg-block create-btn cursor-pointer">Create</h6>
             </div>
             <div class="d-flex gap-3 align-items-center">
                 <i class="bi bi-person-fill"></i>
