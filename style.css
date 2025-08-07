@@ -39,3 +39,11 @@
     scale: 1;
   }
 }
+
+.my-overlay-content video {
+  pointer-events: none;
+  z-index: 0 !important;
+}
+.my-overlay-content img {
+  pointer-events: none;
+}

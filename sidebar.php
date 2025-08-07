@@ -71,7 +71,9 @@
             </div>
             <div class="d-flex gap-3 align-items-center">
                 <i class="bi bi-person-fill"></i>
-                <h6 class="m-0 d-none d-lg-block">Profile</h6>
+                <a href="./profile.php" class="m-0 d-none d-lg-block text-decoration-none text-dark">
+        Profile
+    </a>
             </div>
         </ul>
 

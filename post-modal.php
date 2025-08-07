@@ -46,7 +46,7 @@
 </style>
 
 <div class="post-underlay d-none min-vh-100 w-100 z-3 position-fixed top-0">
-    <form action="./upload-post.php" method="POST" enctype="multipart/form-data"
+    <form action="./upload-post.php" method="POST"  enctype="multipart/form-data"
      class="position-absolute col-xl-6 col-lg-7 col-md-8 col-10 top-50 start-50 translate-middle bg-white py-4 post-box text-center position-relative">
         <i class="bi bi-arrow-left position-absolute cursor-pointer b-arrow d-none" style="left:10px"></i>
         <h6 class="next-btn m-0 position-absolute cursor-pointer d-none text-primary" style="right:10px"> Next</h6>
@@ -61,6 +61,10 @@
                 <img width="100%" height="100%"
                     src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
                     class="preview-image object-fit-cover d-none " alt="">
+
+                    <video controls width="100%" height="100%"
+                    src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                    class="preview-video object-fit-cover d-none " alt=""></video>
                 <div class="content-modal">
                     <div class="icon-container my-4">
                         <span class="me-2"><i class="bi bi-image"></i></span>
