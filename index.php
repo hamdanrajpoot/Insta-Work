@@ -5,7 +5,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include './bootstrap.php' ?>
     <title>Instagram</title>
@@ -46,7 +45,7 @@
                         src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202505/asim-munir-025754823-16x9_0.jpg?VersionId=8eJyERjM9hj8VFtddkKZXToJFUXKv_jf"
                         alt="">
                 </div>
-                <div class="col-sm-5 rounded-end-2 bg-white p-1" >
+                <div class="col-sm-5 rounded-end-2 bg-white p-1">
                     <div class="d-flex p-2 justify-content-between align-items-center">
                         <div class="d-flex  gap-1 align-items-center">
                             <div class="rounded-circle  border-warning d-flex justify-content-center align-items-center"
@@ -166,7 +165,7 @@
                 </div>
             </div>
             <!-- message is fixed -->
-?
+            ?
         </div>
     </div>
 

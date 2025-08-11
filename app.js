@@ -71,10 +71,10 @@ post_box.addEventListener("click", (e) => {
 document.addEventListener("click", (e) => {
   const clickedOutside =
     !create_btn.contains(e.target) &&
-    !post_modal.querySelector(".post-box").contains(e.target);
+    !post_underlay.querySelector(".post-box").contains(e.target);
 
   if (clickedOutside) {
-    post_modal.classList.add("d-none");
+    post_underlay.classList.add("d-none");
   }
 });
 
